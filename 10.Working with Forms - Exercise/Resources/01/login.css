@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: 14px/1.5 Lato, sans-serif;
+}
+body, button, input, select, option, textarea, fieldset, legend{
+    font: inherit;
+}
+
+body{
+    padding: 2em;
+    background-color: #eee;
+}
+
+
+form{
+    background-color: #fff;
+    padding: 4em;
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+form h2{
+    margin-bottom: 0.5em;
+}
+label{
+    font-weight: bold;
+}
+
+input{
+    padding: 0.5em 0.8em;
+    border: 2px solid #ccc;
+    border-radius: 0.3em;
+    outline: none;
+    background-color: #fff;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus{
+    border-color: blueviolet;
+}
+
+
+input[required] ~ label::after{
+    content: '*';
+    color: red;
+    display: inline-block;
+    padding-left: 0.3em;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5em;
+    position: relative;
+}
+
+.field label, 
+input[type="email"],
+input[type="password"]{
+    display: block;
+    width: 100%;
+}
+
+.field label{
+    order: -1;
+}
