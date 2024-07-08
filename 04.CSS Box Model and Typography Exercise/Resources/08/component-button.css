@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    font:inherit;
+}
+
+h2{
+    font: 18px bold;
+    margin: 1em 0em;
+}
+html{
+    font: 14px/1.5 Lato, sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 2em;
+    margin: 0;
+}
+
+.button{
+    display: inline-block;
+    padding: 1em 1.5em;
+    text-align:center;
+    color:#333;
+    background-color: #DDD;
+    border-radius: 0.3em;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    outline:none;
+    cursor: pointer;
+}
+
+.button + .button{
+    margin-left: 1em;
+}
+
+.button:focus,
+.button:hover{
+    color: #fff;
+    background-color: #000;
+}
+
+.button:active{
+background-color: #060;
+}
+
+.button.primary{
+    background-color: orange;
+}
+
+.button.primary:hover{
+    background-color: darkorange;
+    color:#fff;
+}
+
+.button.secondary{
+    background: lightgoldenrodyellow;
+}
+
+.button.secondary:hover{
+    background-color: lightblue;
+    color:#333;
+}
+
+.button.outline{
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.button.outline:hover{
+    background-color: #eee;
+    color:#333;
+}

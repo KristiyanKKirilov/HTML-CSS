@@ -1,0 +1,13 @@
+table,td{
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 1px solid;
+    text-align: center;
+    width: 500px;
+    padding: 5px;
+}
+
+.text{
+    text-align: center;
+    
+}

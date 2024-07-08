@@ -1,0 +1,49 @@
+
+section{
+    border: 2px solid black;
+    
+}
+div{
+    /* border: 2px solid black; */
+    margin-bottom: 20px;
+}
+.uni {
+    margin: 40px;
+}
+
+.non-uni {
+    margin: 10px 30px 20px 30px;
+}
+
+.neg {
+    margin-top: -20px;
+}
+
+.margin-bottom{
+    margin-bottom: 20px;
+}
+
+.margin-top{
+    margin-top: 50px;
+}
+
+.margin-right{
+    display: inline-block;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.margin-left{
+display: inline-block;
+margin-left: 10px;
+width: 200px;
+}
+
+.bled{
+    margin: 20px;
+}
+
+.container{
+    background-color: red;
+    overflow: hidden;
+}

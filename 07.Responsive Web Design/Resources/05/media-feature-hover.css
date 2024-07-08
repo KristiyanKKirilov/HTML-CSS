@@ -1,0 +1,34 @@
+@media all{
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+        font: 14px/1.5 Lato, sans-serif;
+        padding: 2em;
+    }
+    p{
+        padding: 1.5em;
+    }   
+}
+    
+
+body::before{
+        background-color: #369;
+        color: #fff;
+        padding: 1em 1.5em;
+        margin-bottom: 2em;
+        border-radius: 0.3em;
+        display: block;
+}
+    
+      
+    
+@media (hover: hover) {
+        body::before {
+        display: block;
+        content: 'The device does support hover';
+        }
+} 
+

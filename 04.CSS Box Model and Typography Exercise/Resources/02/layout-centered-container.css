@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: inherit;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body{
+    border: 2px solid green;
+    padding: 2em;
+}
+
+.site{
+    border: 2px solid blue;
+    padding: 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.site > *{
+    border: 2px solid black;
+    padding: 2em;
+   
+    font-weight: 700;
+    text-align: center;
+}
+
+.site > * + *{
+    margin-top: 2em;
+}

@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 4em 6em;
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+.container{
+    padding: 4em;
+    box-shadow: 0 0 2em 0 rgb(0, 0, 0, 0.3);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    flex-direction: column
+}
+
+.container > * {
+    
+    padding: 2em;
+    border: 2px solid #ccc;
+    border-radius: 0.4em;
+    font-weight: bold;
+}
+
+
+@media (min-width: 1200px){
+
+    .container{
+        flex-direction: row;
+    }
+    .container > header,
+    .container > footer{
+        flex: 0 0 100%;
+    }
+    
+    .container > main {
+        flex: 1 1 70%;
+    }
+    
+    .container > aside{
+        flex : 1 1 auto;
+    }
+
+}
+

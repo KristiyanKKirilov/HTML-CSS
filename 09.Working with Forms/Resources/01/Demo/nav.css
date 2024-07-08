@@ -1,0 +1,108 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: 14px/1.5 Lato, sans-serif;
+
+}
+
+body{
+    padding: 2em;
+    background-color: #eee;
+}
+.site{
+    background-color: #fff;
+    padding: 2em;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 0 0 1em 0 rgb(0,0,0,0.1);
+    border-radius: 0.3em;
+  
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.main-nav ul{
+    display:flex;   
+    gap: 0.5em;
+}
+
+.main-nav li{
+    display: block;
+    list-style: none outside;
+}
+
+.main-nav li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5em 0.8em;
+    background-color: #090;
+    border-radius: 0.3em;
+    
+}
+
+.main-nav li a:hover{
+    background-color: rgb(0, 96, 0);
+}
+
+@media (hover:hover){
+       
+    #main-nav-toggle,
+    label[for="main-nav-toggle"]{
+        display: none;
+    }
+}
+
+@media(hover:none){
+    .main-nav ul{       
+        flex-direction: column;        
+    }
+
+    #main-nav-toggle{
+        pointer-events: none;
+        position: absolute;
+        top:0;
+        left: 0;
+        opacity: 0;
+    }
+
+  
+    .main-nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        inset: 0;
+        padding: 2em;
+        background-color: #fff;
+        align-items:stretch;
+        justify-content: center;
+    }
+
+    #main-nav-toggle:checked + .site label .open{
+        display: none;
+    }
+
+    #main-nav-toggle:not(:checked) + .site .site-header .main-nav{
+        display: none;
+    }
+    #main-nav-toggle:not(:checked) + .site label .close{
+        display: none;
+    }
+
+    #main-nav-toggle:checked + .site label[for="main-nav-toggle"]{
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        z-index: 1000;
+    }
+}

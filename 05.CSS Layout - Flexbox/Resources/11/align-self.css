@@ -1,0 +1,30 @@
+.flex-container{
+    border: 2px solid blue;
+    padding: 1em;
+    width: 500px;
+    align-items: flex-start;
+    display: flex;
+    height: 200px;
+}
+
+.flex-item{
+    background: #eee;
+    padding: 1.5em;
+    border: 2px solid #000;
+    flex-basis: 300px;
+}
+
+.flex-container.start {
+align-self: flex-start;
+}
+
+.flex-container.center .flex-item:nth-child(2){
+    align-self: center;
+}
+
+.flex-container.end .flex-item:nth-child(2){
+    align-self: flex-end;
+}
+.flex-container.baseline .flex-item:nth-child(2){
+    align-self: baseline;
+}

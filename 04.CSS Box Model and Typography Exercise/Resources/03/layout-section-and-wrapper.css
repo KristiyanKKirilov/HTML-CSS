@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: inherit;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+ 
+
+.wrapper{
+    padding: 2em;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+
+
+
+.section.site-footer,
+.section.site-header{
+ background-color: #eee;
+}
+
+.section.site-banner{
+background-color: lightcyan;
+border-bottom: 1px solid #ccc;
+border-top: 5px solid #000;
+}

@@ -1,0 +1,35 @@
+.flex-container{
+    border: 2px solid blue;
+    padding: 1em;
+    width: 500px;
+    align-items: flex-start;
+    display: flex;
+    height: 200px;
+}
+
+.flex-item{
+    background: #eee;
+    padding: 1.5em;
+    border: 2px solid #000;
+    flex-basis: 300px;
+}
+
+.flex-container.one .flex-item{
+    flex-basis: 5em;
+
+}
+
+.flex-container.zero .flex-item{
+    flex-basis: 5em;
+    flex-shrink: 0;
+    max-width: 5em;
+}
+
+.flex-container.second {
+    width: 900px;
+}
+.flex-container.second .flex-item{
+    flex-basis: 5em;
+    flex-grow: 1;
+    min-width: 5em;
+}
