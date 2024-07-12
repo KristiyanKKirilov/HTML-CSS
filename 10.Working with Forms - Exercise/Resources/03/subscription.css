@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: 14px/1.5 Lato, sans-serif;
+}
+
+body{
+    padding: 2em;
+    background-color: #eee;
+}
+
+
+form{
+    padding: 4em;
+    margin: 0 auto;
+    background-color: #fff;
+    max-width: 800px;
+    display: flex;
+    gap: 1em;
+}
+
+input{
+    padding: 0.8em 0.8em;
+    outline: none;
+    border: none;
+    background-color: #eee;
+    border-radius: 0.3em;
+    color: #656464;
+    width: 100%;
+}
+
+input[type="submit"]{
+    background-color: darkorange;
+    color: #fff;
+}
+
+form p:nth-child(even){
+    flex: 1 1 60%;
+}
+form p:nth-child(odd){
+    flex: 1 1 auto;
+}
+
+
