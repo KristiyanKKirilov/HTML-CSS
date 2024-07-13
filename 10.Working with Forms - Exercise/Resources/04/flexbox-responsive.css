@@ -18,42 +18,32 @@ body{
     background-color: #eee;
 }
 
-
+form h2{
+    padding-bottom: 2em;    
+}
 form{
     background-color: #fff;
     padding: 2em 4em 3em 4em;
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 800px;
     border-radius: 0.3em;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
-form h2{   
-    padding-top: 0;
-    margin-bottom: 1.5em;
+form .field{
+    display: flex;
+    flex-direction: column;
+    color: #666;
+    position: relative;
+    padding-top: 0.5em;
 }
 
-label{
-    font-weight: bold;
-}
-
-input{
-    padding: 1em 0.8em;
-    border-bottom: 2px solid #ccc;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    outline: none;    
-    background-color: #fff;
-}
-
-input[type="email"] ~ label::before{
-    content: '\f0e0';
+form .field label{
+    order: -1;
     position: absolute;
-    display: block;   
-    top: 0;
-    right: 0.2em;
-    font-family: "Font Awesome 6 Free";
+    top: 1.5em;
+    left: 0;
+    transition: transform 0.3s ease-in-out;
 }
 
 input[type="email"] ~ .helper,
@@ -61,48 +51,37 @@ input[type="password"] ~ .helper{
     color: #858484;
     font-style: italic;
     font-size: 0.9em;
-    margin-top: 0.3em;
+    padding-bottom: 1em;
 }
 
-input[type="password"] ~ label::before{
-    content:'\f084';
-    position: absolute;
-    top: 0;
-    right: 0.2em;
-    font-family: "Font Awesome 6 Free";
-    display: block;
-}
-input[type="email"]:focus,
-input[type="password"]:focus{
-    border-color: blueviolet;
-}
-
-
-
-input[type="submit"]{
-    background-color: #ccc;
-    color: #000;
-    font-weight: bold;
+form .field input{
     border: none;
+    border-bottom: 2px solid #ccc;
+    padding: 1em 0;
+    outline: none; 
+} 
+
+form .field input::placeholder{
+    color: transparent;
 }
 
-form p:last-child{
-    margin-top: 2em;
-}
-.field {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 1.5em;
-    position: relative;
+form .field input:not(:placeholder-shown) ~ label{
+    transform: translateY(-1.5em);
+    opacity: 1;
 }
 
-.field label, 
-input[type="email"],
-input[type="password"]{
-    display: block;
-    width: 100%;
+
+form .field input:focus{
+    border-color: rgb(121, 4, 121);
 }
 
-.field label{
-    order: -1;
+form .field input:focus ~ label{
+    color: rgb(121, 4, 121);
+}
+
+form .field input:required ~ label::after
+{    display: inline-block;
+    content: '*';
+    color: red;
+    padding-left: 0.2em;
 }
