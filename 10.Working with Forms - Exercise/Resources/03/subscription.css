@@ -39,11 +39,14 @@ input[type="submit"]{
     color: #fff;
 }
 
-form p:nth-child(even){
-    flex: 1 0 45%;   
+form p:nth-child(1){
+    flex: 1 0 auto;
 }
-form p:nth-child(odd){
-    flex: 1 1 auto;
+form p:nth-child(2){
+    flex: 2 0 45%;   
+}
+form p:nth-child(3){
+    flex: 1 0 auto;
 }
 
 @media (max-width: 400px){
