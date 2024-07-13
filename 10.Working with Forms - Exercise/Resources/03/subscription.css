@@ -21,6 +21,7 @@ form{
     max-width: 800px;
     display: flex;
     gap: 1em;
+    flex-wrap: wrap;
 }
 
 input{
@@ -39,10 +40,17 @@ input[type="submit"]{
 }
 
 form p:nth-child(even){
-    flex: 1 1 60%;
+    flex: 1 0 45%;   
 }
 form p:nth-child(odd){
     flex: 1 1 auto;
 }
+
+@media (max-width: 400px){
+    form{
+        flex-direction: column;
+    }
+}
+
 
 
