@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font: 14px/1.5 Lato, sans-serif;
+}
+body, button, input, select, option, textarea, fieldset, legend{
+    font: inherit;
+}
+
+body{
+    padding: 5em;
+    background-color: #eee;
+}
+
+form h2{
+    padding: 2em 0 1em 0;    
+}
+form{
+    background-color: #fff;
+    padding: 2em 4em 3em 4em;
+    max-width: 800px;
+    border-radius: 0.3em;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+form ul li{
+    list-style: none;
+    display: flex;
+    gap: 0.5em;
+    padding: 0.5em;
+    align-items: center;
+}
+
+form input[type="radio"],
+form input[type="checkbox"]{
+    appearance: none;
+}
+
+form input[type="radio"]{
+    width: 1.5em;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: #eee;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+form input[type="radio"]::before{
+    display: block;
+    content: '';
+    width: 1em;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: orange;
+    opacity: 0;
+    transform: translateX(-2em);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+form input[type="radio"]:checked::before{
+    opacity: 1;
+    transform: translateX(0);
+}
+
+form label{
+    cursor: pointer;
+}
+
+form label:hover{
+    text-decoration: underline;
+}
+form input:checked ~ label{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+form input:checked ~label:hover{
+    text-decoration: none;
+    cursor: default;
+}
+
+form input[type="checkbox"]{
+    width: 3.5em;
+    border-radius: 2em;
+    aspect-ratio: 2/1;
+    background-color: #eee;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.1);
+}
+
+form input[type="checkbox"]::before{
+    display: block;
+    content: '';
+    width: 1.2em;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-color: rgb(255, 119, 0);
+    opacity: 1;
+    transform: translateX(0.5em);
+    transition: opacity 0.3s ease-in-out,
+                transform 0.3s ease-in-out;
+}
+
+form input[type="checkbox"]:checked::before{
+    opacity: 1;
+    transform: translateX(1.8em);    
+}
+
+form input[type="checkbox"]:checked{
+    transition: 
+    background-color 0.3s ease-in-out;
+    background-color: rgb(255, 173, 50);
+}
