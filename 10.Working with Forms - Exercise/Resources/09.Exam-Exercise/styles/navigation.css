@@ -1,0 +1,10 @@
+.main-nav ul{
+    display: flex;
+    gap: 2em;
+}
+
+.main-nav li{
+    display: block;
+    list-style-type: none outside;    
+}
+
