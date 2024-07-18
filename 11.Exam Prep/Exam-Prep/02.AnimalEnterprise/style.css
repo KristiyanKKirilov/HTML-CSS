@@ -138,15 +138,14 @@ body {
   justify-content: space-between;
 }
 .home-stats {
-  width: 100%;
-  display: grid;
-  padding: 48px;
-  grid-gap: 32px;
-  max-width: 1400px;
+  display: flex;
+  gap: 2em;
+  padding: 2em;
   background-color: #85dcff;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
 }
 .home-stat {
+  flex: 1 0 50%;
   display: flex;
   align-items: center;
   flex-direction: column;
