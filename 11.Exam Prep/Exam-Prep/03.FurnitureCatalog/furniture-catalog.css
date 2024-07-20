@@ -9,3 +9,28 @@
 body{
     font: 14px/1.5 PT Sans, sans-serif;
 }
+
+.site{
+    padding: 2em 4em;
+}
+.site-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 13em;
+}
+
+.site-header img{
+    max-width: 100px;
+    aspect-ratio: 1/1;
+}
+.nav-bar{
+    display: flex;
+    gap: 1em;
+    padding-top: 3em;
+}
+.nav-bar a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
