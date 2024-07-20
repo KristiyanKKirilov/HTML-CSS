@@ -54,4 +54,27 @@
  max-width: initial;
 }
 
+.home-header{
+  height: auto;
+  display: block;
+  padding-top: 0.7em;
+}
+.navigation-links-nav{
+  flex-direction: column;
+  gap: 1em;
+  align-items: flex-start;
+  
+}
+.home-nav{
+  padding: 0;
+}
+
+.navigation-links-text,
+.navigation-links-text1{
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+
+
 }
