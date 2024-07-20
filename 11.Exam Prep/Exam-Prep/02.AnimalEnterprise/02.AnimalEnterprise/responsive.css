@@ -19,34 +19,22 @@
 .home-stats{
     display: flex;
     flex-wrap: wrap;
+    gap: 2em;
+    padding: 3em;
 }
 
-.home-container{
-    padding: 0;
-  }
+.home-stat{
+  flex: 1 1 40%;
+}
 
-  .navigation-links-nav {
-    display: flex;
-    gap: 1em;
-    flex-wrap: wrap;
-    text-align: center;
-  }
+.home-container06{
+  flex-direction: column;
+}
 
-  .home-header {    
-    justify-content: center;   
-    padding: 2em 0;
-  }
-
-    
-  .navigation-links-text1,
-  .navigation-links-text  {
-    display: block;
-    flex: 1 0 100%;
-  }
-
-  .navigation-links-text{
-    padding: 0;
-  }
-
+.home-container07{
+  display: block;
+  text-align: center;
+  padding-bottom: 3em;
+}
 
 }
