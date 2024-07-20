@@ -37,4 +37,21 @@
   padding-bottom: 3em;
 }
 
+.home-container08{
+  flex-direction: column;
+  width: 100%;
+  align-items: stretch;
+}
+
+.home-container09{
+  margin-bottom: 2em;
+}
+.home-container09,
+.home-container10{
+ height: auto;
+ width: 100%;
+ padding: 2em;
+ max-width: initial;
+}
+
 }
