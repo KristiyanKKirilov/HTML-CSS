@@ -91,7 +91,7 @@ body::before{
     text-shadow: 0.5px 0.5px #000;
 }
 
-#catalog-info{
+.catalog-info{
     text-align: center;
 }
 
@@ -152,4 +152,16 @@ body::before{
 .furniture img{
     max-width: 100px;
     aspect-ratio: 1/1;
+}
+
+.catalog-images{
+    display: flex;
+    padding: 2em 5em;
+    gap: 6em;
+    justify-content: center;
+}
+
+.catalog-images img{
+    max-width: 350px;
+    box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.4);
 }
