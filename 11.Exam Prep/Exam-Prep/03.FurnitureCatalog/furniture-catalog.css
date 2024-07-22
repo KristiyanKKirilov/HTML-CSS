@@ -12,7 +12,7 @@ body{
     background-repeat: no-repeat;
     background-size: 1600px 870px;
     background-position: top center;
-    background-position-y: -30%;
+    background-position-y: -15%;
     background-position-x: 10%;
     
 }
@@ -27,7 +27,7 @@ body::before{
 }
 
 .site{
-    padding: 2em 0;
+    padding: 2em 0 0 0;
 }
 .site-header{
     display: flex;
@@ -167,7 +167,7 @@ body::before{
 }
 
 .site-about-us{
-    padding-top: 3em;
+    padding: 3em 0;
     text-align: center;
 }
 
@@ -185,3 +185,10 @@ opacity: 0.8;
     margin: 0 auto;
 }
 
+.site-footer{
+    padding: 1em;
+    background-color: #2D333C;
+    color: #fff;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
