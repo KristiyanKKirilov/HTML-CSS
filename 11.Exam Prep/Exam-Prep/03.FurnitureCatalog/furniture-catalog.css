@@ -165,3 +165,23 @@ body::before{
     max-width: 350px;
     box-shadow: 0 0 1em 0 rgb(0, 0, 0, 0.4);
 }
+
+.site-about-us{
+    padding-top: 3em;
+    text-align: center;
+}
+
+.site-about-us h2{
+    opacity: 0.7;
+    font-size: 1.5em;
+}
+
+.site-about-us p{
+opacity: 0.8;
+}
+#about-info{
+    max-width:55%;
+    padding-top: 3em;
+    margin: 0 auto;
+}
+
