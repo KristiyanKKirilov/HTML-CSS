@@ -129,3 +129,27 @@ body::before{
     padding-bottom: 1em;
 }
 
+.site-furniture{
+    padding: 3em 4em;
+    display: flex;
+    gap: 8em;
+}
+
+.furniture{
+    padding: 2em 0;
+    text-align: center;
+}
+
+.furniture h3{
+    font-size: 1.3em;
+    opacity: 0.6;
+    padding-bottom: 1em;
+}
+
+.furniture p{
+    opacity: 0.8;
+}
+.furniture img{
+    max-width: 100px;
+    aspect-ratio: 1/1;
+}
