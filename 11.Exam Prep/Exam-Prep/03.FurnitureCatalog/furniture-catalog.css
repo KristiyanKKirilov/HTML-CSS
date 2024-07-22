@@ -130,7 +130,7 @@ body::before{
 }
 
 .site-furniture{
-    padding: 3em 4em;
+    padding: 2em 4em;
     display: flex;
     gap: 8em;
 }
